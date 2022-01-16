@@ -81,7 +81,7 @@
 /* about */
 .about {
   background: url(./img/about.png) no-repeat center/cover;
-  /* background: #f6f6f6; */
+  /* background: #f5f5f5; */
   height: 100vh;
   width: 100%;
   position: relative;
@@ -105,19 +105,19 @@
   background: rgb(255, 255, 255);
 } */
 .content {
-  width: 45%;
+  width: 50%;
   margin-right: 10%;
-  /* z-index:0; */
+  z-index:2;
   position: relative;
-  padding: 3rem;
-  background-color: white;
-  box-shadow: 5px 5px 20px #FFCDCD;
 }
 .content p {
+  padding: 3rem;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   font-size: 1.15rem;
   line-height: 2.5rem;
   text-align: left;
-  /* z-index:0; */
+  z-index:2;
   
 }
 .content::after {
@@ -128,8 +128,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(8%, -8%);
-  background: #AE3CC0;
+  transform: translate(6%, -6%);
+  background: #7488F4;
   z-index: -1;
 }
 .content::before {
@@ -140,8 +140,8 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: translate(-8%, 8%);
-  background: #D83D3D;
+  transform: translate(-6%, 6%);
+  background: #9900b1;
   z-index: -1;
 }
 
@@ -223,4 +223,70 @@
   right: 4.5%;
   bottom: 4%;
   
+}
+.contact {
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 3rem;
+  /* height: 100%; */
+  background: #f5f5f5;
+}
+.contactimg {
+  width: 50%;
+  position: relative;
+  /* background: cornflowerblue; */
+}
+.img {
+  padding-right: 2rem;
+  width: 100%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  /* background: chartreuse; */
+}
+.img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.details {
+  width: 50%;
+  position: relative;
+  
+}
+.details h1 {
+  font-size: 3rem;
+  padding: 1rem 0rem 1rem 0rem;
+  text-align: center;
+}
+.box {
+  /* width: 80%; */
+  padding: 2rem;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+label {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+input {
+  border-top: none ;
+  border-bottom: 2px solid black;
+  border-left: none;
+  border-right: none;
+  background: #f6f6f6;
+
 }
