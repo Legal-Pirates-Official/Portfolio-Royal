@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.hero > img {
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.hero-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.hero-right .profile {
+  width: 40%;
+  z-index: 5;
+  transform: translateY(-10%);
+}
+.hero-right .decor1 {
+  position: absolute;
+  z-index: 4;
+  right: 5%;
+  transform: translateY(10%);
+  width: 75%;
+  overflow: hidden;
+}
+.hero-left h1 {
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+.hero-left h2 {
+  padding: 1rem;
+  color: #9900b1;
+}
+.hero-left p {
+  padding: 1rem;
+  font-weight: bolder;
+}
+.textbox {
+  margin-left: 15%;
+}
+.name {
+  color: #9900b1;
+}
+.arrow {
+  transform: rotate(180deg);
+  object-fit: contain;
+}
+
+/* about */
+.about {
+  background: url(./img/about.png) no-repeat center/cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  overflow: hidden;
+  
+}
+/* .about::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:50%;
+  height: 100%;
+  border-radius: 80%;
+  transform: translate(-30%, -50%)rotate(10deg);
+  
+  background: rgb(255, 255, 255);
+} */
+.content {
+  background-color: white;
+  width: 45%;
+  padding: 3rem;
+  margin-right: 10%;
+  
+  position: relative;
+}
+.content p {
+  font-size: 1.15rem;
+  line-height: 2.5rem;
+  text-align: left;
+  
+}
+.content::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 85%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(8%, -8%);
+  background: #ae3cc0;
+  z-index: -1;
+}
+.content::before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 85%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-8%, 8%);
+  background: #D83D3D;
+  z-index: -1;
+}
+
+.forest {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 22%;
+}
+.decor2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0%, 0%)scale(1.65)rotate(-4deg);
+  width: 34.2%;
+  
+}
+.about h1 {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 16%;
+  left: 10%;
+  z-index: 2;
+  color: #9900b1;
+}
