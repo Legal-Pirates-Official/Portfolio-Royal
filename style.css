@@ -47,6 +47,9 @@
   left: 0%;
   top: 0%;
 }
+.active2 {
+  /* position: fixed; */
+}
 .menu-card ul {
   display: flex;
   flex-direction: column;
@@ -172,6 +175,9 @@
   margin-right: 10%;
   z-index:2;
   position: relative;
+  /* transform-style: preserve-3d;
+  transform: perspective(1000px); */
+  
 }
 .content p {
   padding: 3rem;
@@ -191,7 +197,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(6%, -6%);
+  /* transform: translate(6%, -6%); */
   background: #7488F4;
   z-index: -1;
 }
@@ -203,14 +209,14 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: translate(-6%, 6%);
+  /* transform: translate(-6%, 6%); */
   background: #9900b1;
   z-index: -1;
 }
 
 .forest {
   position: absolute;
-  bottom: 0;
+  bottom: -100%;
   left: 5%;
   width: 22%;
 }
