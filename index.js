@@ -1,4 +1,6 @@
-const menubtn = document.querySelector('.menu');
+const menubtn = document.querySelector('.line1');
+const menubtn2 = document.querySelector('.line2');
+const menubtn3 = document.querySelector('.line3');
 const menu = document.querySelector('.menu-card');
 const hero = document.querySelector('.hero-left');
 const card = document.querySelector('.card');
@@ -6,9 +8,34 @@ const body = document.querySelector('body');
 menubtn.addEventListener('click', function(e) {
   menu.classList.toggle('active');
   body.classList.toggle('active2');
-  // hero.style.backgroundColor = '#539EFB';
-});
+  menubtn.classList.toggle('trans1');
+  menubtn2.classList.toggle('trans2');
+  menubtn3.classList.toggle('trans3');
 
+});
+menubtn2.addEventListener('click', function(e) {
+  menu.classList.toggle('active');
+  body.classList.toggle('active2');
+  menubtn.classList.toggle('trans1');
+  menubtn2.classList.toggle('trans2');
+  menubtn3.classList.toggle('trans3');
+
+});
+menubtn3.addEventListener('click', function(e) {
+  menu.classList.toggle('active');
+  body.classList.toggle('active2');
+  menubtn.classList.toggle('trans1');
+  menubtn2.classList.toggle('trans2');
+  menubtn3.classList.toggle('trans3');
+
+});
+// menubtn.foreach(function(e) {
+//   e.addEventListener('click', function(e) {
+//     menu.classList.toggle('active');
+//     body.classList.toggle('active2');
+//     // hero.style.backgroundColor = '#539EFB';
+//   });
+// });
 
 
 VanillaTilt.init(document.querySelectorAll('.shake'), {
@@ -99,3 +126,10 @@ gsap.timeline(
   duration:   .0,
   borderTop: 2 + 'px solid #006ab1'
   },'<-0.5')
+
+
+
+
+  //menu
+
+  me

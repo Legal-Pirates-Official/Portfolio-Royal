@@ -7,15 +7,53 @@
   font-family: "Montserrat", sans-serif;
 }
 /* menu */
-.menu {
+.line {
+
  
+ 
+
+  z-index: 6;
+}
+.line1 {
+  width: 30px;
+  height:3px;
   position: absolute;
   top: 5%;
- 
-  right: 3%;
+  right: 5%;
+  background: rgb(255, 255, 255);
   z-index: 5;
-  cursor: pointer;
-  opacity: 1;
+  transition: all .5s ease-in-out;
+}
+.line2 {
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  top: 6%;
+  right: 5%;
+  background: rgb(255, 255, 255);
+  z-index: 5;
+  transition: all .5s ease-in-out;
+}
+.line3 {
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  top: 7%;
+  right: 5%;
+  background: rgb(255, 255, 255);
+  z-index: 5;
+  transition: all .5s ease-in-out;
+}
+.trans1 {
+  transform: rotate(45deg)translateY(100%)translateX(20%);
+  
+}
+.trans2 {
+  
+  opacity: 0;
+}
+.trans3 {
+  transform: rotate(-45deg)translateY(-100%)translateX(20%);
 
 }
 .menu-card {
