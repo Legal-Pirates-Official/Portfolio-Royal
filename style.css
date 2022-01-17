@@ -308,13 +308,16 @@
   position: relative;
   /* border-bottom: 2px solid black; */
   /* background: cornflowerblue; */
+  overflow: hidden;
 }
 .img {
+  transform: translateX(110%);
   padding-right: 4rem;
   width: 100%;
-  height: 90%;
+  height:83%;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 13%;
   /* border: 2px solid black; */
   /* background: chartreuse; */
 }
@@ -326,18 +329,36 @@
 .details {
   width: 50%;
   position: relative;
+  overflow: hidden;
+  
   
 }
 .details h1 {
   font-size: 3rem;
   padding: 1rem 0rem 1rem 0rem;
   text-align: center;
+  transform: translateX(-100%);
+  /* text-shadow: 4px 4px 5px  rgb(134, 0, 211); */
+  color: rgb(0, 0, 0);
+  
 }
 .box {
   /* width: 80%; */
   padding: 2rem;
-  border-top: 2px solid black;
-  border-left: 2px solid black;
+  border-top: 0px solid #006ab1;
+  border-left: 2px solid rgb(155, 0, 226);
+  transition: all .3s ease-in-out;
+ 
+  
+  
+  
+  
+  
+  
+}
+.box2 {
+  transform: translateX(-100%);
+  transition: all .3s ease-in-out;
 
 }
 .field {
@@ -371,7 +392,7 @@ input:focus {
   outline: none;
 }
 .contactbtn {
-  background: #000000;
+  background: linear-gradient(to right, #9900b1, #6E8BF5);
   color: white;
   cursor: pointer;
   position: relative;

@@ -68,3 +68,34 @@ gsap.timeline({
     bottom: '0%'
   }
 )
+
+
+
+gsap.timeline(
+  {
+      scrollTrigger: {
+    trigger: '.contact',
+    start: 'top 70%',
+
+       
+          
+          // scrub: true,
+          // pin: true
+
+  }
+  }
+).to('.img',{
+  duration:   .6,
+  x: '0',
+  height: '90%',
+  marginTop: '0%'
+}).to('.detailh1',{
+  duration:   .6,
+  x: '0',
+}).to('.box2',{
+  duration:   .3,
+  x: '0'
+} ).to('.box',{
+  duration:   .0,
+  borderTop: 2 + 'px solid #006ab1'
+  },'<-0.5')
