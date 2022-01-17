@@ -11,6 +11,34 @@
 
 <body>
     <section class="hero">
+        <div class="menu-card">
+            
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Work</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <span class="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 172 172"
+            style=" fill:#000000;">
+            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#ffffff">
+                    <path
+                        d="M14.33333,35.83333v14.33333h143.33333v-14.33333zM14.33333,78.83333v14.33333h143.33333v-14.33333zM14.33333,121.83333v14.33333h143.33333v-14.33333z">
+                    </path>
+                </g>
+            </g>
+        </svg>
+        </span>
+
+        
+
         <img src="./img/Vector.png" alt="">
         <div class="hero-left">
             <form class="textbox">
@@ -25,7 +53,7 @@
                     <p>Go to Resume </p><img class="arrow"
                         src="https://img.icons8.com/ios-glyphs/30/000000/circled-left-2.png" />
                 </span>
-            </div>
+        </div>
 
         </div>
         <div class="hero-right">
@@ -35,8 +63,8 @@
     </section>
     <section class="about">
         <h1>Bio.</h1>
-        <img class="decor2" src="./img/Vector2.png" alt="">
-        <div class="content">
+        <img class="decor2 " src="./img/Vector2.png" alt="">
+        <div class="content shake">
             <p>Madison is fueled by her passion for understanding the nuances of cross-cultural advertising. She
                 considers
                 herself a ‘forever student,’ eager to both build on her academic foundations in psychology and sociology
@@ -46,7 +74,7 @@
                 professional
                 development.</p>
         </div>
-        <img class="forest" src="./img/forest.png" alt="">
+        <img class="forest shake" src="./img/forest.png" alt="">
     </section>
     <section>
         <div class="workhead">
@@ -78,25 +106,50 @@
         </div>
         <div class="details">
             <h1>Contact Us</h1>
-        <form action="">
-            <div class="box">
-                <div class="field">
-                    <label for="">Full Name</label>
-                    <input type="text">
+            <form action="">
+                <div class="box">
+                    <div class="field">
+                        <label for="">Full Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <label for="">E-mail</label>
+                        <input type="text">
+                    </div>
+                    <div class="field">
+                        <label for="">Message</label>
+                        <input type="text">
+                    </div>
+                    <button class="contactbtn">Contact Us</button>
                 </div>
-                <div class="field">
-                    <label for="">E-mail</label>
-                    <input type="text">
-                </div>
-                <div class="field">
-                    <label for="">Message</label>
-                    <input type="text">
-                </div>
-                <button class="contactbtn">Contact Us</button>
-            </div>
-        </form>
+            </form>
         </div>
     </section>
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"
+            integrity="sha512-K9tDZvc8nQXR1DMuT97sct9f40dilGp97vx7EXjswJA+/mKqJZ8vcZLifZDP+9t08osMLuiIjd4jZ0SM011Q+w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+            integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
+            integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+<script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin.min.js"
+            integrity="sha512-Aa3UvVB5yhH/dNXMt8nGZDD15Xmntq1ODcavfgT8omSLaomrJKYybWczzc6UJYDUAdqR1hmDJ47V4Ux50PPIuw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
