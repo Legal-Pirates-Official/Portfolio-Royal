@@ -1,6 +1,8 @@
 const menubtn = document.querySelector('.line1');
 const menubtn2 = document.querySelector('.line2');
 const menubtn3 = document.querySelector('.line3');
+const menubtn4 = document.querySelector('.mid');
+const menubtn5 = document.querySelector('.mid2');
 const menu = document.querySelector('.menu-card');
 const hero = document.querySelector('.hero-left');
 const card = document.querySelector('.card');
@@ -29,6 +31,23 @@ menubtn3.addEventListener('click', function(e) {
   menubtn3.classList.toggle('trans3');
 
 });
+menubtn4.addEventListener('click', function(e) {
+  menu.classList.toggle('active');
+  body.classList.toggle('active2');
+  menubtn.classList.toggle('trans1');
+  menubtn2.classList.toggle('trans2');
+  menubtn3.classList.toggle('trans3');
+
+});
+menubtn5.addEventListener('click', function(e) {
+  menu.classList.toggle('active');
+  body.classList.toggle('active2');
+  menubtn.classList.toggle('trans1');
+  menubtn2.classList.toggle('trans2');
+  menubtn3.classList.toggle('trans3');
+
+});
+
 // menubtn.foreach(function(e) {
 //   e.addEventListener('click', function(e) {
 //     menu.classList.toggle('active');
