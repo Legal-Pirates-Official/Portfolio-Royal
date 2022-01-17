@@ -27,7 +27,7 @@ gsap.timeline(
   {
       scrollTrigger: {
     trigger: '.about',
-    start: 'top 80%',
+    start: 'top 70%',
 
        
           
@@ -41,6 +41,8 @@ gsap.timeline(
   cssRule: {
     translateX: '6%',
     translateY: '-6%',
+    width: '50%',
+    height: '85%'
   }
 }
   
@@ -50,6 +52,8 @@ gsap.timeline(
   cssRule: {
     translateX: '-6%',
     translateY: '6%',
+    width: '50%',
+    height: '85%'
   }
 }, '>-0.5')
 gsap.timeline({
