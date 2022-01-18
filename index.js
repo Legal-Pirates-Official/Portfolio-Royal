@@ -7,13 +7,13 @@ const menu = document.querySelector('.menu-card');
 const hero = document.querySelector('.hero-left');
 const card = document.querySelector('.card');
 const body = document.querySelector('body');
+
 menubtn.addEventListener('click', function(e) {
   menu.classList.toggle('active');
   body.classList.toggle('active2');
   menubtn.classList.toggle('trans1');
   menubtn2.classList.toggle('trans2');
   menubtn3.classList.toggle('trans3');
-
 });
 menubtn2.addEventListener('click', function(e) {
   menu.classList.toggle('active');
@@ -21,7 +21,6 @@ menubtn2.addEventListener('click', function(e) {
   menubtn.classList.toggle('trans1');
   menubtn2.classList.toggle('trans2');
   menubtn3.classList.toggle('trans3');
-
 });
 menubtn3.addEventListener('click', function(e) {
   menu.classList.toggle('active');
@@ -37,7 +36,6 @@ menubtn4.addEventListener('click', function(e) {
   menubtn.classList.toggle('trans1');
   menubtn2.classList.toggle('trans2');
   menubtn3.classList.toggle('trans3');
-
 });
 menubtn5.addEventListener('click', function(e) {
   menu.classList.toggle('active');
@@ -45,8 +43,10 @@ menubtn5.addEventListener('click', function(e) {
   menubtn.classList.toggle('trans1');
   menubtn2.classList.toggle('trans2');
   menubtn3.classList.toggle('trans3');
-
 });
+hero.addEventListener('click', function(e) {
+  menu.classList.remove('active');
+})
 
 // menubtn.foreach(function(e) {
 //   e.addEventListener('click', function(e) {
@@ -91,7 +91,7 @@ gsap.timeline(
     height: '85%'
   }
 }
-  
+
 
 ).to(beforerule,{
   duration:   .8,
@@ -151,4 +151,3 @@ gsap.timeline(
 
   //menu
 
-  me
