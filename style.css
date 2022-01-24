@@ -449,11 +449,11 @@ input:focus {
   font-weight: 600;
 }
 
-.foot {
+/* .foot {
   background: #000000;
   z-index: 2;
   width: 100%;
-}
+} */
 /* footer */
 footer {
   display: flex;
@@ -492,9 +492,11 @@ footer {
   }
   .hero-left {
     width: 100%;
+    justify-content: space-around;
   }
   .hero-right {
     width: 100%;
+    height: 75%;
   }
   .hero-left h1 {
     padding: 0rem;
@@ -503,6 +505,10 @@ footer {
   .textbox {
     margin: 10%;
     margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .hero > img {
     width: 85%;
@@ -551,7 +557,7 @@ footer {
     margin: 4%;
   }
   .workhead {
-    height: 7rem;
+    height: 9rem;
   }
   .workhead img {
     width: 49%;
@@ -561,6 +567,7 @@ footer {
   }
   #work {
     height: fit-content;
+    overflow: hidden;
   }
   .contact {
     flex-direction: column;
@@ -592,5 +599,9 @@ footer {
 
   .foot {
     background: #fff;
+  }
+  .content::after , .content::before
+  {
+    display: none;
   }
 }

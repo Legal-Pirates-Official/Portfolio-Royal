@@ -44,9 +44,6 @@ menubtn5.addEventListener('click', function(e) {
   menubtn2.classList.toggle('trans2');
   menubtn3.classList.toggle('trans3');
 });
-hero.addEventListener('click', function(e) {
-  menu.classList.remove('active');
-})
 
 // menubtn.foreach(function(e) {
 //   e.addEventListener('click', function(e) {
